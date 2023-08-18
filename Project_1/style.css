@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+h1{
+    text-align: center;
+    font-size: 2.1em;
+    padding: 10px 0;
+}
+
+.container{
+    width: 20vw;
+    height: 60vh;
+    margin: 2px auto;
+    text-align: center;
+    padding: 5px 0;
+    margin-top: 5px;
+    background-color: dimgray;
+}
+
+.output{
+    line-height: 40px;
+    background-color: white;
+    color:black;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 1.4em;
+    text-align: right;
+    font-family: monospace;
+    padding: 0 8px;
+    border: 1.5px solid rgb(183, 183, 183);
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    padding: 7px;
+    margin: 18px 8px;
+    background-color: azure;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+    vertical-align: middle;
+    line-height: 45px;
+    display: inline-block;
+}
+
+.row{
+    width: 100%;
+    display: block;
+}
+
+@media (max-width:552px){
+    .container{
+        width: 80vw;
+        height: 60vh;
+    }
+}
+
+@media (min-width:553px) and (max-width:992px){
+    .container{
+        width: 60vw;
+        height: 80vh;
+    }
+}
