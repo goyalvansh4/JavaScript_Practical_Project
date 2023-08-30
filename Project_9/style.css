@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Gilroy';
+    padding: 0;
+    color: #fff;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#main{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(12, 189, 189);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+#card{
+    height: 480px;
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #484848;
+}
+#stroyian{
+  width: 100%;
+  height: 120px;
+  border-bottom: 1px solid #dadada;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 15px;
+}
+#stroyian::-webkit-scrollbar{
+    display: none;
+}
+.story{
+   width: 90px;
+   height: 90px;
+   border-radius: 50%;
+   border: 1px solid red;
+   overflow: hidden;
+   display: inline-block;
+   margin: 0px 2px;
+}
+.story img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+#full-screen{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* background-color: red; */
+    display: none;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
