@@ -92,7 +92,35 @@ function circleChaptaKaro() {
             ease:Power3,
             top:diff,
             left:dets.clientX,
-            rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),
+            rotate: gsap.utils.clamp(-20, 20, diffrot * 0.5),//give the value in between range
         })
     })
    });
+
+   GetTime();
+
+function GetTime(){
+  var CurrentTime = new Date()
+  var hour = CurrentTime.getHours()
+  var minute = CurrentTime.getMinutes()
+  var second = CurrentTime.getSeconds()
+
+  if(minute < 10){
+    minute = "0" + minute
+  }
+
+  if(second < 10){
+    second = "0" + second
+  }
+
+  var GetCurrentTime = hour + ":" + minute + ":" + second + " ";
+
+  if(hour > 11){
+    GetCurrentTime += "P.M"
+  }else{
+    GetCurrentTime += "A.M"
+  }
+
+  document.getElementById("CurrentTime").innerHTML = GetCurrentTime;
+  setTimeout(GetTime,1000)
+}

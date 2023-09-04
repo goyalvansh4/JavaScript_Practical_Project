@@ -259,4 +259,7 @@ html,body{
     .elem img{
         display:none;
     }
+    #minicircle{
+        display: none;
+    }
 }
