@@ -89,3 +89,15 @@ height:100%;
     font-size: 28px;
     margin-right: -6px;
 }
+
+.weather{
+    display: none;
+}
+.error {
+    text-align: left;
+    display: none;
+}
+.error p{
+    margin-top: 5px;
+    margin-left: 2px;
+}

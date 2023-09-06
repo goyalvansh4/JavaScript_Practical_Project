@@ -9,7 +9,12 @@ const weatherIcon = document.querySelector(".weather-icon");
 async function chechWeather(city){
     const response = await fetch(apiUrl + city + `&appid=${apiKey}`);
     var data =  await response.json();
-     console.log(data);
+     //console.log(data);
+       if(response.status == 404){
+         document.querySelector(".error").style.display="block";
+       }
+     else{
+        document.querySelector(".error").style.display="none";
     document.querySelector(".city").innerHTML = data.name;
     document.querySelector(".temp").innerHTML = Math.round(data.main.temp) + "°C";
     document.querySelector(".humidity").innerHTML = data.main.humidity + "%";
@@ -30,6 +35,9 @@ async function chechWeather(city){
     else if(data.weather[0].main == "Mist"){
         weatherIcon.src = "./images/mist.png";
     }
+
+    document.querySelector(".weather").style.display ="block";
+ }
 
 }   
 
